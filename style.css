@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+/* Inicio estilos para header */
+
+.header-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 75px 150px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / 6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.anuncio-descuento {
+    color: #FFF;
+    font-family: sans-serif;
+    font-size: 10px;
+    background: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.usuario {
+    color: #E5CFE5;
+    background-color: #FFF;
+    padding: 10px;
+    font-family: 'Quicksand', sans-serif;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+
+.usuario p {
+    margin-left: 20px;
+}
+
+/* Inicio estilos para logo */
+.section-container-logo {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    grid-area: 2 / 1 / 3 / 6;
+    background-color: #CFF6CF;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section-logo {
+    width: auto;
+}
+
+
+/* Fin estilos para logo */
+/* Fin estilos para el header */
+
+/* Inicio estilos para navbar */
+
+.sticky {
+    background: #F5EEDC;
+    border-bottom: 2px solid #000;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.section-container-navbar {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section-navbar {
+    font-size: 14px;
+    list-style-type: none;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Media Qwerty navbar*/
+@media screen and (max-width: 480px) {
+    .sticky {
+        position: static;
+    }
+}
+
+/* Fin estilos para navbar */
+
+/* Inicio estilos para portada */
+
+.portada-grid-container {
+    width: 100%;
+}
+
+.portada-grid {
+    padding: 10px;
+}
+
+.foto-portada {
+    width: 100%;
+}
+/* Fin estilos para portada */
+
+/* Inicio estilos para sección novedades*/
+
+.encabezado-novedades {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    border-top: 1px solid #e5cfe5a1 ;
+    border-bottom: 1px solid #e5cfe5a1 ;
+    font-size: 20px;
+    color: #E5CFE5;
+    text-align: center;
+    text-transform: uppercase;
+}
+.novedades-productos-grid-container {
+    width: 100%;
+    display: flex;
+}
+
+.novedades-grid {
+    padding: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+    
+.novedades-foto01 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+
+}
+.novedades-productos-texto {
+    color: #FFF;
+    padding: 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.493);
+}
+
+.novedades-foto02 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+.novedades-foto03 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+.novedades-foto04 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+.novedades-foto05 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+.novedades-foto06 { 
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+}
+
+/* Fin estilos para sección novedades */
+
+/*Inicio estilos sección productos */
+.novedades-productos-grid-container {
+    width: 100%;
+    display: flex;
+}
+
+.productos-grid {
+    padding: 20px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+}
+
+.productos {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    background: #F6DEF6;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Media Qwerty novedades*/
+
+@media screen and (max-width: 897px) {
+
+    .novedades-productos-grid-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .novedades-productos-movil {
+        display: block;
+        align-items: center;
+   }
+
+   h1 {
+       font-size: 80%;
+   }
+}
+
+/* Fin estilos para sección novedades y sección prodcutos */
+
+/* Inicio estilos para Sobre Cábala */
+
+.nosotros-grid-container {
+    margin-top: 40px;
+    margin-bottom: 200px;
+    width: 100%;
+    background-image: url(./Images/Fondo-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nosotros-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+h6 {
+    padding-top: 30px;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: #8d5e7a;
+    font-size: 40px;
+    text-align: center;
+    
+}
+.nosotros-foto {
+    width: 90%;
+    position: relative;
+    justify-content: center;
+    top: 80px;
+    left: 30px;
+
+}
+.nosotros-texto {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.nosotros-texto p {
+    color: #FFF;
+    background: #4b2664ef;
+    padding: 40px;
+    line-height: 20px;
+    text-align: justify;
+}
+
+/* Media Qwerty Sobre Cábala */
+@media screen and (max-width: 938px) {
+
+    .nosotros-grid-container {
+        background-image: none;
+        margin-bottom: 100px;
+    }
+
+    .nosotros-grid {
+        display: block;
+    }
+
+    .nosotros-texto {
+        margin: 0;
+    }
+
+    .nosotros-foto {
+        width: 100%;
+        position: static;
+    }
+
+}
+
+/* Fin estilos para Sobre Cábala */
+
+/* Inicio estilos para sección Políticas de cambio */
+
+.encabezado-politicas-de-cambio {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    border-top: 1px solid #CFF6CFa1 ;
+    border-bottom: 1px solid #CFF6CFa1 ;
+    font-size: auto;
+    color: #CFE5CF;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.politicas-grid {
+    background-color: #CFE5CF;
+    margin: 20px;
+    padding: 40px;
+}
+
+.politicas-items {
+    padding: 20px 60px;
+    border-style: dashed;
+    font-family: 'Quicksand', sans-serif;
+    color: #000;
+    font-size: 14px;
+    line-height: 18px;
+    list-style-type: square;
+    text-align: justify;
+}
+
+.politicas-items p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    padding: 20px;
+    text-decoration: underline;
+}
+
+/* Media Qwerty Politicas de cambio*/
+@media screen and (max-width: 700px) {
+    .politicas-grid {
+        padding: 0px;
+    }
+
+    .politicas-items {
+        padding: 20px 20px;
+        border: 1px dashed #000;
+    }
+}
+/* Fin estilos para sección Políticas de cambio */
+
+
+/* Inicio estilos para frase */
+.frase-container {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.frase {
+    width: 100%;
+    height: 100%;
+}
+/* Fin estilos para frase */
+
+/* Inicio estilos para sección Contacto */
+
+.iconos-redes-container {
+    display: flex;
+    justify-content: center;
+    background-color: #E5CFE5;
+    margin-top: 100px;
+    padding-top: 50px;
+
+
+}
+
+.icono-redes img {
+    width: 100%;
+    height: 30px;
+}
+
+.contacto-footer-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 600px 40px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: #E5CFE5;
+    padding-top: 50px;
+}
+
+.contacto-container {
+    width: 100%;
+    background-color: #FFF;
+    padding-top: 30px;
+    grid-area: 1 / 1 / 2 / 4;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto li {
+    text-align: center;
+    padding: 10px;
+}
+
+.iconos-contacto {
+    width: 15px;
+    height: 15px;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+iframe {
+    width: 90%;
+    height: 300px;
+    padding-top: 10px;
+}
+
+/* Fin estilos para sección contacto */
+
+/* footer */
+.footer-container {
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+.footer {
+    color: #000;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Fin footer */
+
+/* Inicio popup WhatsApp  */
+.popup-whatsapp img {
+    width: 50px;
+    height: 50px;
+}
+
+.position-fixed {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+/* Fin Popup WhatsApp  */
