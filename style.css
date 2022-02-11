@@ -117,9 +117,21 @@ a {
     padding: 10px;
 }
 
+.portada {
+    background-image: url(./Images/Portada02.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .foto-portada {
     width: 100%;
+    transition: all 2s;
 }
+
+.foto-portada:hover {
+    opacity: 0%;
+}
+
 /* Fin estilos para portada */
 
 /* Inicio estilos para sección novedades*/
@@ -223,7 +235,33 @@ a {
     padding: 5px;
 }
 
-/* Media Qwerty novedades*/
+.boton-ver-mas {
+    color: #FFF;
+    width: 5%;
+    background-color: #8d5e7a;
+    border-radius: 6px;
+    padding: 5px 5px;
+    margin: 10px auto;
+    text-align: center;
+    transition: all 4s;
+}
+
+.boton-ver-mas:hover {
+    animation: sombra 4s;
+    padding: 10px 15px;
+}
+
+.ver-mas {
+    display: inline;
+}
+
+@keyframes sombra {
+    100% {
+        background-color: #442538;
+        box-shadow:1px 1px 10px black;
+    }
+}
+/* Media Qwerty novedades-productos*/
 
 @media screen and (max-width: 897px) {
 
@@ -242,7 +280,7 @@ a {
    }
 }
 
-/* Fin estilos para sección novedades y sección prodcutos */
+/* Fin estilos para sección productos */
 
 /* Inicio estilos para Sobre Cábala */
 

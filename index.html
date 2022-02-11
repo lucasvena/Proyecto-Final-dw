@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
@@ -79,7 +81,9 @@
     <!-- Inicia Portada -->
     <section class="portada-grid-container">
         <div class="portada-grid">
-            <img class="foto-portada" src="./Images/Portada.jpg" alt="">
+            <div class="portada">
+                <img class="foto-portada" src="./Images/Portada.jpg" alt="">
+            </div>
         </div>
     </section>
     <!-- Fin Portada -->
@@ -145,7 +149,8 @@
         <h4>Políticas de cambio y devolución</h4>
     </section>
 
-    <section class="politicas-grid-container">
+    <section class="politicas-grid-container" data-aos="fade-up"
+    data-aos-duration="3000">
         <ol class="politicas-grid">
             <div class="politicas-items">
                 <h5>CAMBIOS:</h5>
@@ -260,6 +265,13 @@
     </section>
 
     <!-- Fin Pop Up Whatsapp -->
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 </html>
