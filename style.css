@@ -11,14 +11,13 @@ img {
 
 .header-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr;
     grid-template-rows: 75px 150px;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
 
 .header {
-    grid-area: 1 / 1 / 2 / 6;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -33,25 +32,17 @@ img {
     padding: 10px;
 }
 
-.usuario {
-    color: #E5CFE5;
-    background-color: #FFF;
-    padding: 10px;
+.btn-font {
     font-family: 'Quicksand', sans-serif;
-    display: inline-flex;
-    justify-content: flex-end;
-}
-
-.usuario p {
-    margin-left: 20px;
 }
 
 /* Inicio estilos para logo */
 .section-container-logo {
+    margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
     grid-area: 2 / 1 / 3 / 6;
-    background-color: #CFF6CF;
+    background-color: #A3DA8D;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -66,72 +57,16 @@ img {
 /* Fin estilos para el header */
 
 /* Inicio estilos para navbar */
-
-.sticky {
-    background: #F5EEDC;
-    border-bottom: 2px solid #000;
-    position: sticky;
-    top: 0;
-    z-index: 20;
+.img-size {
+    width: auto;
+    height: 40px;
 }
-
-.section-container-navbar {
-    width: 100%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.bg-navbar {
+    background-color: #EEEEEE;
 }
-
-.section-navbar {
-    font-size: 14px;
-    list-style-type: none;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
-
-a {
-    color: #000;
-    text-decoration: none;
-    margin-right: 10px;
-    margin-left: 10px;
-}
-
-/* Media Qwerty navbar*/
-@media screen and (max-width: 480px) {
-    .sticky {
-        position: static;
-    }
-}
-
 /* Fin estilos para navbar */
 
 /* Inicio estilos para portada */
-
-.portada-grid-container {
-    width: 100%;
-}
-
-.portada-grid {
-    padding: 10px;
-}
-
-.portada {
-    background-image: url(./Images/Portada02.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.foto-portada {
-    width: 100%;
-    transition: all 2s;
-}
-
-.foto-portada:hover {
-    opacity: 0%;
-}
-
 /* Fin estilos para portada */
 
 /* Inicio estilos para sección novedades*/
@@ -207,79 +142,9 @@ a {
     position: relative;
     align-items: flex-end;
 }
-
 /* Fin estilos para sección novedades */
 
 /*Inicio estilos sección productos */
-.novedades-productos-grid-container {
-    width: 100%;
-    display: flex;
-}
-
-.productos-grid {
-    padding: 20px;
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
-}
-
-.productos {
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-    background: #F6DEF6;
-    margin: 10px;
-    padding: 5px;
-}
-
-.boton-ver-mas {
-    color: #FFF;
-    width: 5%;
-    background-color: #8d5e7a;
-    border-radius: 6px;
-    padding: 5px 5px;
-    margin: 10px auto;
-    text-align: center;
-    transition: all 4s;
-}
-
-.boton-ver-mas:hover {
-    animation: sombra 4s;
-    padding: 10px 15px;
-}
-
-.ver-mas {
-    display: inline;
-}
-
-@keyframes sombra {
-    100% {
-        background-color: #442538;
-        box-shadow:1px 1px 10px black;
-    }
-}
-/* Media Qwerty novedades-productos*/
-
-@media screen and (max-width: 897px) {
-
-    .novedades-productos-grid-container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .novedades-productos-movil {
-        display: block;
-        align-items: center;
-   }
-
-   h1 {
-       font-size: 80%;
-   }
-}
-
 /* Fin estilos para sección productos */
 
 /* Inicio estilos para Sobre Cábala */
