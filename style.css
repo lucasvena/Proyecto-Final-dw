@@ -41,8 +41,7 @@ img {
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 20px;
-    grid-area: 2 / 1 / 3 / 6;
-    background-color: #A3DA8D;
+    border-top: 1px solid #000;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -50,6 +49,12 @@ img {
 
 .section-logo {
     width: auto;
+}
+
+@media screen and (max-width: 476px) {
+    .section-container-logo {
+        margin-top: 20px;
+    }
 }
 
 
@@ -62,11 +67,11 @@ img {
     height: 40px;
 }
 .bg-navbar {
-    background-color: #EEEEEE;
-    border-top: 1px solid #000;
+    background-color: #F7F7F7;
 }
 .font-items {
     font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
 }
 /* Fin estilos para navbar */
 
@@ -79,16 +84,18 @@ img {
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 10px ;
-    padding-bottom: 10px;
-    border-top: 1px solid #e5cfe5a1 ;
-    border-bottom: 1px solid #e5cfe5a1 ;
+    border-top: 1px solid #FFBD35 ;
+    border-bottom: 1px solid #FFBD35 ;
     font-size: 20px;
-    color: #E5CFE5;
+    color: #502064;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
-.novedades-productos-grid-container {
-    width: 100%;
+.novedades-grid-container {
+    width: 83%;
+    margin-right: 8%;
+    margin-left: 8%;
     display: flex;
 }
 
@@ -98,57 +105,134 @@ img {
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    
 }
     
 .novedades-foto01 { 
     display: flex;
     position: relative;
     align-items: flex-end;
-
-}
-.novedades-productos-texto {
-    color: #FFF;
-    padding: 20px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: sans-serif;
-    font-size: 14px;
-    text-align: justify;
-    background-color: rgba(0, 0, 0, 0.493);
+    background-image: url(./Images/1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
 
 .novedades-foto02 { 
     display: flex;
     position: relative;
     align-items: flex-end;
+    background-image: url(./Images/2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
 .novedades-foto03 { 
     display: flex;
     position: relative;
     align-items: flex-end;
+    background-image: url(./Images/3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
 .novedades-foto04 { 
     display: flex;
     position: relative;
     align-items: flex-end;
+    background-image: url(./Images/4.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
 .novedades-foto05 { 
     display: flex;
     position: relative;
     align-items: flex-end;
+    background-image: url(./Images/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
 .novedades-foto06 { 
     display: flex;
     position: relative;
     align-items: flex-end;
+    background-image: url(./Images/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
 }
-/* Fin estilos para sección novedades */
+
+h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.novedades-texto-container {
+    width: auto;
+    color: #FFF;
+    padding: 10px 20px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.493);
+    border-radius: 2%;
+}
+
+.descripcion {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+}
+
+.transicion {
+    transition: all 2s;
+    border-radius: 2%;
+}
+.opacidad:hover {
+    opacity: 0%;
+}
+
+/* Media Qwerty novedades */
+
+@media screen and (max-width: 870px) {
+    .novedades-grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 598px) {
+    .novedades-productos-grid-container {
+        width: 100%;
+        margin: 0;
+    }
+    .novedades-grid {
+        width: 100%;
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
 
 /*Inicio estilos sección productos */
+.boton-ver-mas {
+    background-color: #FFF;
+    color: #502064;
+    border-color: #502064;
+    transition: all 4s;
+}
+
+.boton-ver-mas:hover {
+    background-color: #502064;
+    color: #FFF;
+    box-shadow: 1px 1px 10px black;
+}
 /* Fin estilos para sección productos */
 
 /* Inicio estilos para Sobre Cábala */
@@ -173,8 +257,8 @@ img {
 h6 {
     padding-top: 30px;
     margin-bottom: 40px;
-    font-family: 'Playfair Display', serif;
-    color: #8d5e7a;
+    font-family: 'Nunito', sans-serif;
+    color: #502064;
     font-size: 40px;
     text-align: center;
     
@@ -193,10 +277,12 @@ h6 {
 }
 .nosotros-texto p {
     color: #FFF;
-    background: #4b2664ef;
+    background: #FFBD35;
     padding: 40px;
     line-height: 20px;
     text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
 }
 
 /* Media Qwerty Sobre Cábala */
@@ -230,17 +316,17 @@ h6 {
     margin-top: 40px;
     margin-bottom: 40px;
     padding-top: 10px ;
-    padding-bottom: 10px;
-    border-top: 1px solid #CFF6CFa1 ;
-    border-bottom: 1px solid #CFF6CFa1 ;
+    border-top: 1px solid #FFBD35 ;
+    border-bottom: 1px solid #FFBD35 ;
     font-size: auto;
-    color: #CFE5CF;
+    color: #502064;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
     text-transform: uppercase;
 }
 
 .politicas-grid {
-    background-color: #CFE5CF;
+    background-color: #3FA796;
     margin: 20px;
     padding: 40px;
 }
@@ -263,10 +349,9 @@ h6 {
 
 h5 {
     color: #000;
-    font-size: 16px;
-    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
     padding: 20px;
-    text-decoration: underline;
 }
 
 /* Media Qwerty Politicas de cambio*/
@@ -299,11 +384,14 @@ h5 {
 .division-contacto {
     margin-top: 40px;
     height: 50px;
-    background-color: #E5CFE5;
+    background-color: #8267BE;
     border: 1px 0 solid rgba(0, 0, 0, .15);
     box-shadow: inset 0 0.5em 1.5em rgb(0 0 0 / 10%), inset 0 0.125em 0.5em rgb(0 0 0 / 15%);
 }
 
+p {
+    font-family: 'Quicksand', sans-serif; 
+}
 .iconos-contacto {
     width: auto;
     height: 15px;
