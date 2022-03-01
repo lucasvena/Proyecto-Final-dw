@@ -1,0 +1,62 @@
+@import "../base/extends";
+/* Inicio estilos para Sobre Cábala */
+
+.encabezado-nosotros {
+    @extend %encabezados;
+}
+
+.nosotros-grid-container {
+    margin-top: 40px;
+    margin-bottom: 200px;
+    width: 100%;
+    background-image: url(../Images/fondo-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media screen and (max-width: 938px) {
+        background-image: none;
+        margin-bottom: 100px;
+    }
+
+    .nosotros-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+
+        @media screen and (max-width: 938px) {
+            display: block;
+        }
+
+        .nosotros-texto {
+            margin-top: 20px;
+            margin-left: 40px;
+
+            @media screen and (max-width: 938px) {
+                margin: 0;
+            }
+    
+            p {
+                color: #FFF;
+                background: #FFBD35;
+                padding: 40px;
+                line-height: 20px;
+                text-align: justify;
+                font-family: 'Quicksand', sans-serif;
+                font-size: 14px;
+            }
+        }
+
+        .nosotros-foto {
+            width: 90%;
+            position: relative;
+            justify-content: center;
+            top: 80px;
+            left: 30px;
+
+            @media screen and (max-width: 938px) {
+                width: 100%;
+                position: static;
+            }
+        }
+    }
+}

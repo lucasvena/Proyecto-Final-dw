@@ -1,0 +1,5 @@
+@import "../base/mapa";
+
+.borde-car {
+    border-radius: map-get($map: $home, $key: border);
+}

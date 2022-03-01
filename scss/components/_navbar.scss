@@ -13,7 +13,7 @@
     .font-color {
         color: nth($list: $colores, $n: 2);
         font-family: nth($list: $font, $n: 2);
-        font-size: nth($list: $size, $n: 3);
+        font-size: nth($list: $size, $n: 2);
 
         &:hover {
             color: nth($list: $colores, $n: 4);

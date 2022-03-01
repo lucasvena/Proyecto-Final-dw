@@ -1,0 +1,27 @@
+@import "../base/extends";
+/*Inicio estilos sección productos */
+
+.encabezado-productos {
+    @extend %encabezados;
+}
+
+.font-productos {
+    @extend %titulos;
+}
+.descripcion {
+    font-family: 'Quicksand', sans-serif;
+    font-size: small;
+}
+
+.boton-ver-mas {
+    background-color: #FFF;
+    color: #502064;
+    border-color: #502064;
+    transition: all 4s;
+}
+
+.boton-ver-mas:hover {
+    background-color: #502064;
+    color: #FFF;
+    box-shadow: 1px 1px 10px black;
+}

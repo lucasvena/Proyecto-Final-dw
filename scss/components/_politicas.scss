@@ -1,0 +1,42 @@
+@import "../base/extends";
+@import "../base/mixins";
+@import "../base/listas";
+@import "../base/mapa";
+
+.encabezado-politicas-de-cambio {
+    @extend %encabezados;
+}
+
+.politicas-grid {
+    border-radius: map-get($map: $home, $key: border);
+    background-color: nth($list: $colores, $n: 6);
+    margin: 20px;
+    padding: 40px;
+
+    @media screen and (max-width: 700px) {
+        padding: 0px;
+    }
+
+    .politicas-items {
+        font-family: nth($list: $font, $n: 2);
+        font-size: nth($list: $size, $n: 1);
+        @include politicas-items( #000, 20px 60px, 3px dashed #000, 18px, square, justify);
+
+
+        @media screen and (max-width: 700px) {
+            padding: 20px 20px;
+            border: 1px dashed #000;
+        }
+
+        h5 {
+            color: #000;
+            font-size: 18px;
+            font-family: 'Nunito', sans-serif;
+            padding: 20px;
+        }
+        .politicas-items p {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+    }
+}

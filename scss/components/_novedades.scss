@@ -1,0 +1,123 @@
+@import "../base/extends";
+@import "../base/mapa";
+
+.encabezado-novedades {
+    @extend %encabezados;
+}
+
+.novedades-grid-container {
+    width: 83%;
+    margin-right: 8%;
+    margin-left: 8%;
+    margin-bottom: 50px;
+    display: flex;
+
+    @media screen and (max-width: 598px) {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .novedades-grid {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap: 20px;
+
+        @media screen and (max-width: 870px) {
+            width: 100%;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+
+        @media screen and (max-width: 598px) {
+            width: 100%;
+            margin: 10px;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(6, 1fr);
+        } 
+
+        .nov-estructura {
+            border-radius: map-get($map: $home, $key: border);
+            background-color: #FFBD35;
+
+            .novedades-foto01 {
+                background-image: url(../Images/1.jpg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            .novedades-foto02 {
+                background-image: url(../Images/2.jpg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            .novedades-foto03 {
+                background-image: url(../Images/3.jpg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            .novedades-foto04 {
+                background-image: url(../Images/4.jpeg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            .novedades-foto05 {
+                background-image: url(../Images/5.jpg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            .novedades-foto06 {
+                background-image: url(../Images/6.jpg);
+                @extend %estructura-novedades;
+                border-radius: map-get($map: $home, $key: border);
+                .borde-nov {
+                    border-radius: map-get($map: $home, $key: border);
+                }
+            }
+            
+            .transicion {
+                transition: all 2s;
+                border-radius: 2%;
+
+                &:hover {
+                    opacity: 0%;
+                }
+            }
+            
+            .novedades-texto-container {
+                width: auto;
+                padding-top: 20px;
+                padding-right: 10px;
+                padding-left: 10px;
+                color: #FFF;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: justify;
+                h4 {
+                    @extend %titulos;
+                }
+                .descripcion {
+                    font-family: 'Quicksand', sans-serif;
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
