@@ -1,4 +1,6 @@
 @import "../base/extends";
+@import "../base/mapa";
+
 /* Inicio estilos para Sobre Cábala */
 
 .encabezado-nosotros {
@@ -31,6 +33,7 @@
             margin-top: 20px;
             margin-left: 40px;
 
+
             @media screen and (max-width: 938px) {
                 margin: 0;
             }
@@ -38,6 +41,7 @@
             p {
                 color: #FFF;
                 background: #FFBD35;
+                border-radius: map-get($home, border);
                 padding: 40px;
                 line-height: 20px;
                 text-align: justify;
@@ -52,10 +56,15 @@
             justify-content: center;
             top: 80px;
             left: 30px;
+            border-radius: map-get($home, border);
 
             @media screen and (max-width: 938px) {
                 width: 100%;
                 position: static;
+            }
+
+            .foto-alu {
+                border-radius: map-get($home, border);
             }
         }
     }

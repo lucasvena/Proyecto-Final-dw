@@ -37,69 +37,59 @@
 <body>
     <!-- Inicio header -->
 
-    <!-- Promo -->
-    <header class="header-container">
+    <header class="header-container sticky-top">
+        <!-- Promo -->
         <div class="header">
             <section class="anuncio-descuento">
                 <p class="mb-0">3 CUOTAS SIN INTERÉS | 15% OFF CON TRANSFERENCIA BANCARIA | ENVÍOS A TODO EL PAÍS</p>
             </section>
-            <div class="rew-md-3 text-end mt-1">
-                <button type="button bg" class="btn btn-light text-dark me-2 btn-font">Login</button>
-                <button type="button" class="btn btn-warning btn-font">Sign-up</button>
-            </div> 
         </div>                    
+        <!-- Fin Promo -->
         
-        
+         <!-- Inicio Navbar -->
 
-        <!-- Logo -->
-        <section class="section-container-logo">
-            <div class="section-logo">
-                <a href= "../index.html">
-                    <img class="img-logo img-fluid" src="../Images/cabala_logo.png" alt="logo con piedra">
+        <nav class="navbar navbar-expand-lg navbar-light pt-0 pb-0 bg-color">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="img-size" src="../Images/logo-navbar.png" alt="piedra brillos cabala">
                 </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav m-auto p-1">
+                        <li class="nav-item">
+                            <a class="nav-link active font-color" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-color" href="../index.html#novedades">Novedades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-color" href="./productos.html">Productos</a>                        
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-color" href="#nosotros">Sobre Cábala</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-color" href="../index.html#politicas-de-cambio">Políticas de Cambio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-color" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                    <div class="rew-md-3 text-end ms-4 mb-1">
+                        <button type="button bg" class="btn btn-light text-dark me-2 btn-font">Login</button>
+                        <button type="button" class="btn btn-warning btn-font">Sign-up</button>
+                    </div> 
+                </div>
             </div>
-        </section>
+        </nav>
+        <!-- Fin Sección Navbar -->
     </header>
     <!-- Fin header -->
 
-    <!-- Inicio Navbar -->
-
-    <nav class="navbar navbar-expand-lg bg-navbar sticky-top pt-0 pb-0 bg-color">
-        <div class="container-fluid">
-          <a class="navbar-brand pt-0 pb-0" href="../index.html">
-            <img class="img-size" src="../Images/logo-navbar.png" alt="piedra y brillos">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav p-1">
-                    <li class="nav-item">
-                        <a class="nav-link active font-color" aria-current="page" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-color" href="../index.html#novedades">Novedades</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-color" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-color" href="#nosotros">Sobre Cábala</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-color" href="../index.html#politicas-de-cambio">Políticas de Cambio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link font-color" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </nav>
-    <!-- Fin Sección Navbar -->
-    
     <!-- Inicia sección Sobre Cábala -->
-    <section class="encabezado-productos">
+    <section class="encabezado-productos mt-5">
         <h1>Detrás de Cábala</h1>
     </section>
     
@@ -118,18 +108,16 @@
                 </p>
             </div>
             <div class="nosotros-foto">
-                <img class="img-fluid" src="../Images/FotoNosotros.jpg" alt="foto dueña cábala">
+                <img class="img-fluid foto-alu" src="../Images/FotoNosotros.jpg" alt="foto dueña cábala">
             </div>
         </div>
     </section>
 
     <!-- Fin sección Sobre Cábala -->
 
-    <div class="division-contacto"></div>
-
     <!-- Inicio sección contacto-footer -->
 
-    <div id="contacto" class="container">
+    <div id="contacto" class="bg-contain ps-5 pe-5">
         <div class="row row-cols-1 row-cols-md-2 py-5">
             <div class="col">
                 <h5>Contacto:</h5>
@@ -156,7 +144,7 @@
             </div>
     
             <div class="col">
-                <h5>Mapa</h5>
+                <h5>Mapa:</h5>
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52343.02542109778!2d-57.98818999951051!3d-34.92052327671704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62b1f0085a1%3A0xbcfc44f0547312e3!2sLa%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1642371091475!5m2!1ses-419!2sar" width="" height="" style="border:0;" allowfullscreen="" loading="lazy"></iframe>

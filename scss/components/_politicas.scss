@@ -10,11 +10,14 @@
 .politicas-grid {
     border-radius: map-get($map: $home, $key: border);
     background-color: nth($list: $colores, $n: 6);
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 40px;
 
     @media screen and (max-width: 700px) {
-        padding: 0px;
+        margin: 5px;
+        padding: 5px;
+        border: none;
     }
 
     .politicas-items {
@@ -25,7 +28,7 @@
 
         @media screen and (max-width: 700px) {
             padding: 20px 20px;
-            border: 1px dashed #000;
+            border: none;
         }
 
         h5 {

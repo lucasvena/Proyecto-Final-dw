@@ -32,67 +32,68 @@
         }
 
         @media screen and (max-width: 598px) {
-            width: 100%;
-            margin: 10px;
+            width: 85%;
+            margin-left: 8%;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(6, 1fr);
         } 
 
         .nov-estructura {
-            border-radius: map-get($map: $home, $key: border);
-            background-color: #FFBD35;
+            border-radius: map-get($home, border);
+            background-color: #FFF;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
 
             .novedades-foto01 {
                 background-image: url(../Images/1.jpg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             .novedades-foto02 {
                 background-image: url(../Images/2.jpg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             .novedades-foto03 {
                 background-image: url(../Images/3.jpg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             .novedades-foto04 {
                 background-image: url(../Images/4.jpeg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             .novedades-foto05 {
                 background-image: url(../Images/5.jpg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             .novedades-foto06 {
                 background-image: url(../Images/6.jpg);
                 @extend %estructura-novedades;
-                border-radius: map-get($map: $home, $key: border);
+                border-radius: map-get($home, border);
                 .borde-nov {
-                    border-radius: map-get($map: $home, $key: border);
+                    border-radius: map-get($home, border);
                 }
             }
             
             .transicion {
-                transition: all 2s;
+                transition: all 0.5s;
                 border-radius: 2%;
 
                 &:hover {
@@ -105,7 +106,7 @@
                 padding-top: 20px;
                 padding-right: 10px;
                 padding-left: 10px;
-                color: #FFF;
+                color: #000;
                 display: flex;
                 flex-direction: column;
                 align-items: center;

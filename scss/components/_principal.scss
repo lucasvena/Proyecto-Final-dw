@@ -1,0 +1,55 @@
+@import "../base/listas";
+@import "../base/mapa";
+
+.principales-container {
+    background-color: rgba(0, 0, 0, 0.056);
+    border-radius: map-get($home , border);
+    padding-bottom: 25px;
+
+    .mg-principal {
+        width: 83%;
+        margin-top: 150px;
+        margin-left: 8%;
+        border-radius: map-get($home , border);
+
+        @media screen and (max-width: 980px) {
+            margin-top: 100px;
+            width: 85%;
+            margin-left: 7%;
+        }
+
+        @media screen and (max-width: 598px) {
+            width: 90%;
+            margin-top: 50px;
+            margin-left: 5%;   
+        } 
+
+        .principal-01 {
+            background-color: nth( $colores, 4 );
+            border: none;
+            border-radius: map-get($home , border);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+        }
+        .principal-02 {
+            background-color: nth( $colores, 5 );
+            border: none;
+            border-radius: map-get($home , border);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+        }
+        .principal-03 {
+            background-color: nth( $colores, 6 );
+            border: none;
+            border-radius: map-get($home , border);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
+        }
+        
+        .transicion {
+            transition: all 0.5s;
+            border-radius: map-get($home , border);
+
+            &:hover {
+                opacity: 50%;
+            }
+        }
+    }
+}
