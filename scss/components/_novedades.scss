@@ -44,7 +44,7 @@
             box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.508);
 
             .novedades-foto01 {
-                background-image: url(../Images/1.jpg);
+                background-image: url(../Images/1.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
@@ -52,7 +52,7 @@
                 }
             }
             .novedades-foto02 {
-                background-image: url(../Images/2.jpg);
+                background-image: url(../Images/2.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
@@ -60,7 +60,7 @@
                 }
             }
             .novedades-foto03 {
-                background-image: url(../Images/3.jpg);
+                background-image: url(../Images/3.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
@@ -68,7 +68,7 @@
                 }
             }
             .novedades-foto04 {
-                background-image: url(../Images/4.jpeg);
+                background-image: url(../Images/4.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
@@ -76,7 +76,7 @@
                 }
             }
             .novedades-foto05 {
-                background-image: url(../Images/5.jpg);
+                background-image: url(../Images/5.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
@@ -84,7 +84,7 @@
                 }
             }
             .novedades-foto06 {
-                background-image: url(../Images/6.jpg);
+                background-image: url(../Images/6.avif);
                 @extend %estructura-novedades;
                 border-radius: map-get($home, border);
                 .borde-nov {
