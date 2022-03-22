@@ -1,5 +1,6 @@
 @import "../base/extends";
 @import "../base/mapa";
+@import "../base/listas";
 
 /* Inicio estilos para Sobre Cábala */
 
@@ -11,7 +12,7 @@
     margin-top: 40px;
     margin-bottom: 200px;
     width: 100%;
-    background-image: url(../Images/fondo-nosotros.jpg);
+    background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/night-starry_MI4ZJYZZS9.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -40,7 +41,7 @@
     
             p {
                 color: #FFF;
-                background: #FFBD35;
+                background: nth($colores , 7);
                 border-radius: map-get($home, border);
                 padding: 40px;
                 line-height: 20px;

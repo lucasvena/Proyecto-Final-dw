@@ -1,4 +1,7 @@
 @import "../base/listas";
 body {
     background-color: nth($colores, 3);
+    .disclaimer {
+        display: none;
+    }
 }

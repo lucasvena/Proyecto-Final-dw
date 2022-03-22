@@ -2,6 +2,9 @@
 body {
   background-color: #F7F7F7;
 }
+body .disclaimer {
+  display: none;
+}
 
 /* Inicio estilos para header */
 .header-container {
@@ -46,7 +49,7 @@ body {
   font-size: 16px;
 }
 .bg-color .font-color:hover {
-  color: #FFBD35;
+  color: #FFBD35 !important;
 }
 
 /* Extends para sección novedades */
@@ -55,7 +58,7 @@ body {
   background-size: cover;
 }
 
-.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h4 {
+.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h2 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -189,7 +192,7 @@ body {
   background-size: cover;
 }
 
-.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h4 {
+.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h2 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -232,7 +235,6 @@ body {
   padding: 20px 60px;
   border: 3px dashed #000;
   line-height: 18px;
-  list-style-type: square;
   text-align: justify;
 }
 @media screen and (max-width: 700px) {
@@ -241,7 +243,7 @@ body {
     border: none;
   }
 }
-.politicas-grid .politicas-items h5 {
+.politicas-grid .politicas-items h3 {
   color: #000;
   font-size: 18px;
   font-family: "Nunito", sans-serif;
@@ -250,6 +252,9 @@ body {
 .politicas-grid .politicas-items .politicas-items p {
   margin-top: 10px;
   margin-bottom: 30px;
+}
+.politicas-grid .politicas-items .estilo-item {
+  list-style-type: square;
 }
 
 .bg-contain {
@@ -291,7 +296,7 @@ iframe {
   background-size: cover;
 }
 
-.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h4 {
+.font-productos, .novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h2 {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -338,7 +343,7 @@ iframe {
   background-size: cover;
 }
 
-.novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h4, .font-productos {
+.novedades-grid-container .novedades-grid .nov-estructura .novedades-texto-container h2, .font-productos {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
@@ -365,7 +370,7 @@ iframe {
   margin-top: 40px;
   margin-bottom: 200px;
   width: 100%;
-  background-image: url(../Images/fondo-nosotros.jpg);
+  background-image: url(https://cdn.stocksnap.io/img-thumbs/960w/night-starry_MI4ZJYZZS9.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -396,7 +401,7 @@ iframe {
 }
 .nosotros-grid-container .nosotros-grid .nosotros-texto p {
   color: #FFF;
-  background: #FFBD35;
+  background: #8267BE;
   border-radius: 0.25rem;
   padding: 40px;
   line-height: 20px;

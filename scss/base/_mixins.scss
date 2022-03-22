@@ -1,9 +1,8 @@
-@mixin politicas-items($color, $relleno, $border, $interlineado, $estilo-lista, $texto-alineacion) {
+@mixin politicas-items($color, $relleno, $border, $interlineado, $texto-alineacion) {
     
     color: $color;
     padding: $relleno;
     border: $border;
     line-height: $interlineado;
-    list-style-type: $estilo-lista;
     text-align: $texto-alineacion;
 }
